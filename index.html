@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Gimnasio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Módulo de Gimnasio</h1>
+            <p>Optimiza tu tiempo y mantente saludable con nuestras herramientas de registro, cálculo y consejos.</p>
+            <button class="btn hero-btn" onclick="scrollToSection()">Explorar Funcionalidades</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="features" class="features">
+            <h2>Características Principales</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Consulta de Horarios</h3>
+                    <p>Verifica los horarios y la capacidad disponible del gimnasio en tiempo real.</p>
+                    <button class="btn">Consultar</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Registro de Usuarios</h3>
+                    <p>Regístrate en horarios disponibles para evitar saturación.</p>
+                    <button class="btn">Registrar</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Calculadora de IMC</h3>
+                    <p>Calcula tu Índice de Masa Corporal y lleva un control de tu progreso.</p>
+                    <button class="btn">Calcular</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Tips y Consejos</h3>
+                    <p>Accede a consejos personalizados sobre ejercicio y nutrición.</p>
+                    <button class="btn">Ver Tips</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Universidad de la costa (CUC) &copy; 2024 - Proyecto de Aula</p>
+    </footer>
+
+    <script>
+        function scrollToSection() {
+            document.getElementById("features").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
+
