@@ -1,8 +1,6 @@
-/* Reset y Base */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fdfdfd; color: #333; }
 
-/* Hero Section con Rojo Oscuro */
 .hero {
     background: linear-gradient(rgba(80, 0, 0, 0.85), rgba(20, 0, 0, 0.9)), 
                 url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1350&q=80') center/cover;
@@ -15,12 +13,11 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:
 }
 .hero-content h1 { font-size: 3.5rem; letter-spacing: 2px; text-transform: uppercase; }
 
-/* Grid de Características */
 .container { padding: 40px 10%; }
 .features h2 { 
     text-align: center; 
     margin-bottom: 30px; 
-    color: #800000; /* Rojo Oscuro */
+    color: #800000; 
     border-bottom: 2px solid #800000;
     display: inline-block;
     width: 100%;
@@ -38,15 +35,13 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s;
     text-align: center;
-    border-top: 5px solid #800000; /* Detalle superior en rojo */
+    border-top: 5px solid #800000; 
 }
 .feature-card:hover { transform: translateY(-5px); }
 
-/* Barra de Progreso en Rojo */
 .progress-bar { background: #eee; border-radius: 10px; height: 12px; margin: 15px 0; overflow: hidden; }
 .progress-fill { background: #800000; height: 100%; transition: width 0.5s; }
 
-/* Botones Rojo Oscuro */
 .btn {
     background: #800000;
     color: white;
@@ -60,7 +55,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:
 }
 .btn:hover { background: #a00000; }
 
-/* Modales */
 .modal {
     display: none;
     position: fixed;
@@ -84,5 +78,4 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:
 
 input, select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
 
-/* Footer */
 .footer { background: #400000; color: white; text-align: center; padding: 25px; margin-top: 40px; }
