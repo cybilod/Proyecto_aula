@@ -1,9 +1,7 @@
-// Desplazamiento suave
 function scrollToSection() {
     document.getElementById("features").scrollIntoView({ behavior: "smooth" });
 }
 
-// Funciones de Modal
 function abrirModal(id) {
     document.getElementById(id).style.display = "flex";
 }
@@ -12,7 +10,6 @@ function cerrarModal(id) {
     document.getElementById(id).style.display = "none";
 }
 
-// Lógica IMC
 function calcularIMC() {
     const peso = document.getElementById('peso').value;
     const altura = document.getElementById('altura').value;
@@ -31,14 +28,12 @@ function calcularIMC() {
     }
 }
 
-// Simulación de Registro
 function registrarUsuario(event) {
     event.preventDefault();
     alert("¡Reserva confirmada! Se ha enviado un código QR a tu correo institucional.");
     cerrarModal('modal-registro');
 }
 
-// Tip Aleatorio
 function verTip() {
     const tips = [
         "Bebe al menos 500ml de agua antes de entrenar.",
@@ -50,7 +45,6 @@ function verTip() {
     alert("Tip del día: " + tips[azar]);
 }
 
-// Simular actualización de aforo
 function verAforo() {
     const num = Math.floor(Math.random() * 40);
     document.getElementById('status-aforo').innerText = `${num}/40 personas`;
